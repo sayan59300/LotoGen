@@ -9,7 +9,6 @@ module.exports = {
     for (i=0; i<5; i++) {
       do {
         tirage = number.random(1,49);
-        //équivaut à => tirage = Math.floor((Math.random() * 49) + 1);
       } while (numbers.indexOf(tirage) !== -1);
       numbers.push(tirage);
     }
@@ -17,6 +16,5 @@ module.exports = {
   },
   bonus: () => {
     return number.random(1,10);
-    //équivaut à => bonus = Math.floor((Math.random() * 10) + 1);
   }
 };
